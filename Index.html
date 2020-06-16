@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Project 1 - Lorenz Attractor</title>
+	<style>canvas{border: 1px solid black;}</style>
+	
+	<!-- Import Adobe Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/djo5wqj.css">
+	<!-- Import Style sheets -->
+	<link rel="stylesheet" href="src/styles.css">
+	<!-- Import library of helper functions -->
+	<script src="src/twbLIB.js"></script>
+	<!-- Import source code for building web application -->
+	<script src="src/index.js"></script>
+</head>
+
+<body>
+ 	<header>
+ 		<h1>Retro-Future Lorenz Sandbox</h1>
+ 	</header>
+  	
+   	<aside id="controls">
+   		<p>This is an experimental, sandbox application developed using JavaScript.
+   		Stemming from the Lorenz Attractor system of ordinary differential equations,
+   		the z-axis of this three dimensional system dictates the color of the sandbox
+   		which ultimately gives it the "retro-futuristic" vibe.
+   		Check the boxes and slide the sliders. Simply do the thing and enjoy!</p>
+   		
+   		<p>
+  		<!-- Reflection checkboxes --> 
+  		<input type="checkbox" id="reflectX"> Reflect Horizontally
+  		<input type="checkbox" id="reflectY"> Reflect Vertically<br><br>
+  	
+  		<!-- Wireframe radios -->
+  		<input type="radio" name="wire" id="wiremode" value=0 checked="checked">Wireframe Mode
+  		<input type="radio" name="wire" id="polymode" value=1>Poligonal Mode<br><br>
+  		
+  		<!-- Inner Lorenz scale slider -->
+  		Thick<input type="range" min="-100" max="200" value="100" class="slider" id="innerScale">Thin<br>
+  		</p>
+  		
+  	</aside>
+  
+  	<canvas id="canvas">
+    	<!-- The user will only see the above text if their browser is older and doesn't support <canvas> -->
+  		Your browser doesn't support canvas! Get gud noob!
+  	</canvas>
+  
+
+  
+</body>
+
+<footer>
+	
+</footer>
+</html>
